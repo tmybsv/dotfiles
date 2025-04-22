@@ -1,5 +1,5 @@
 return {
-	'stevearc/aerial.nvim',
+	"stevearc/aerial.nvim",
 	config = function()
 		require("aerial").setup({
 			on_attach = function(bufnr)
@@ -8,5 +8,5 @@ return {
 			end,
 		})
 		vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
-	end
+	end,
 }

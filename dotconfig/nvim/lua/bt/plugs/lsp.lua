@@ -1,35 +1,56 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-			vim.lsp.handlers.hover,
-			{border = "none"}
-		)
-		vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
-			vim.lsp.handlers.signature_help,
-			{border = "none"}
-		)
 		vim.diagnostic.config({
 			float = {
 				border = "none",
 			},
+			update_in_insert = false,
+			virtual_text = true,
+			severity_sort = true,
 		})
+
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function(event)
 				local opts = { buffer = event.buf }
-				vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-				vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
-				vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, opts)
-				vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-				vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
-				vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
-				vim.keymap.set("i", "<c-h>", function() vim.lsp.buf.signature_help() end, opts)
-			end
+
+				local function map(mode, lhs, rhs)
+					vim.keymap.set(mode, lhs, rhs, vim.tbl_extend("force", opts, {}))
+				end
+
+				map("n", "gd", vim.lsp.buf.definition)
+				map("n", "gD", vim.lsp.buf.declaration)
+				map("n", "gl", vim.diagnostic.open_float)
+				map("n", "K", vim.lsp.buf.hover)
+				map("n", "<leader>ca", vim.lsp.buf.code_action)
+				map("n", "<leader>rn", vim.lsp.buf.rename)
+				map("i", "<c-h>", vim.lsp.buf.signature_help)
+			end,
 		})
+
 		local lspconfig = require("lspconfig")
-		lspconfig.gopls.setup{}
-		lspconfig.ccls.setup{}
-		lspconfig.pyright.setup{}
-		lspconfig.lua_ls.setup{}
-	end
+		local servers = {
+			gopls = {
+				telemetry = {
+					enabled = false,
+				},
+			},
+			ccls = {},
+			pyright = {},
+			lua_ls = {
+				settings = {
+					Lua = {
+						runtime = { version = "LuaJIT" },
+						diagnostics = { globals = { "vim" } },
+						workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+						telemetry = { enable = false },
+					},
+				},
+			},
+		}
+
+		for server, config in pairs(servers) do
+			lspconfig[server].setup(config)
+		end
+	end,
 }

@@ -1,14 +1,13 @@
 {
-  "aerial.nvim": { "branch": "master", "commit": "fc1e7a7a31ac835c499d3eec300632ee9f7d2c42" },
-  "fzyf.nvim": { "branch": "main", "commit": "4b467a2f3cd7b50fd0a2506d6b1e14fde25bfc7b" },
-  "lazy.nvim": { "branch": "main", "commit": "f15a93907ddad3d9139aea465ae18336d87f5ce6" },
-  "lualine.nvim": { "branch": "master", "commit": "f4f791f67e70d378a754d02da068231d2352e5bc" },
-  "mini.comment": { "branch": "main", "commit": "5bd72d50d36f4c0fd531adc409715a75a2c984da" },
-  "mini.completion": { "branch": "main", "commit": "089f581c6bd7bca606a311a013843ad32ee6fa35" },
-  "mini.pairs": { "branch": "main", "commit": "1a3e73649c0eaef2f6c48ce1e761c6f0a7c11918" },
-  "mini.surround": { "branch": "main", "commit": "f90069c7441a5fb04c3de42eacf93e16b64dd3eb" },
-  "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
-  "nvim-lspconfig": { "branch": "master", "commit": "6c17f8656f667727b27f5f598463afedb7791b18" },
-  "oil.nvim": { "branch": "master", "commit": "abbfbd0dbcaa78c3dcdada191ea23e50a41e5806" },
-  "trouble.nvim": { "branch": "main", "commit": "6f380b8826fb819c752c8fd7daaee9ef96d4c689" }
+  "aerial.nvim": { "branch": "master", "commit": "44684bf429dc40e97a6d00ffa09043ac3f692186" },
+  "autoclose.nvim": { "branch": "main", "commit": "b2077aa2c83df7ebc19b2a20a3a0654b24ae9c8f" },
+  "conform.nvim": { "branch": "master", "commit": "eebc724d12c5579d733d1f801386e0ceb909d001" },
+  "fzyf.nvim": { "branch": "main", "commit": "2ce86b8238642bed2accb8d4f21de163baedc504" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "lualine.nvim": { "branch": "master", "commit": "86fe39534b7da729a1ac56c0466e76f2c663dc42" },
+  "mini.comment": { "branch": "main", "commit": "fb867a9246f9b892cf51a8c84a3f8479cdf1558c" },
+  "nvim-lspconfig": { "branch": "master", "commit": "81920264a264144bd075f7f48f0c4356fc2c6236" },
+  "oil.nvim": { "branch": "master", "commit": "302bbaceeafc690e6419e0c8296e804d60cb9446" },
+  "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
+  "visual-surround.nvim": { "branch": "main", "commit": "48288830c085f744bf8f5de818d23966245587c8" }
 }

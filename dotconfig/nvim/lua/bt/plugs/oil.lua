@@ -1,10 +1,10 @@
 return {
-    "stevearc/oil.nvim",
-    config = function()
-    	require("oil").setup({
-		confirmation = {
-			border = "none",
-		},
-	})
-    end
+	"stevearc/oil.nvim",
+	config = function()
+		require("oil").setup({
+			confirmation = {
+				border = "none",
+			},
+		})
+	end,
 }
