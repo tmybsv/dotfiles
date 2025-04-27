@@ -1,6 +1,7 @@
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.opt.completeopt:remove("preview")
+vim.o.number = true
 vim.o.relativenumber = true
 vim.o.expandtab = false
 vim.o.tabstop = 8
