@@ -10,10 +10,15 @@ return {
 				json = { "prettier" },
 				markdown = { "prettier" },
 				yaml = { "prettier" },
+				sql = { "pg_format" },
 			},
-			format_on_save = {
+			format_after_save = {
 				lsp_format = "fallback",
 			},
+			-- format_on_save = {
+			-- 	lsp_format = "fallback",
+			-- 	timeout_ms = 500,
+			-- },
 		})
 	end,
 }
