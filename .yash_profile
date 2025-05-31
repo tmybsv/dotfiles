@@ -6,9 +6,9 @@ export EDITOR=nvim
 export FCEDIT=$EDITOR
 export HOSTNAME=$(uname -n)
 export PATH=$PATH:/bin:~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:~/.go/bin:~/.npm-global/bin:~/.cargo/bin:/opt/cuda/bin
-export BROWSER=firefox
+export BROWSER=librewolf
 export GOPATH=$HOME/.go
-cd /home/basuev/src/typings/ && git pull &
-cd /home/basuev/src/dotfiles/ && git pull &
-cd /home/basuev/src/kdbx/ && git pull &
-cd /home/basuev/src/mind-obsidian/ && git pull &
+cd $HOME/src/typings/ && git pull &
+cd $HOME/src/dotfiles/ && git pull &
+cd $HOME/src/kdbx/ && git pull &
+cd $HOME/src/mind-obsidian/ && git pull &
