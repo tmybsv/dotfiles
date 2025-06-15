@@ -8,7 +8,7 @@ return {
 				lua = { "stylua" },
 				proto = { "buf" },
 				json = { "prettier" },
-				markdown = { "prettier" },
+				-- markdown = { "prettier" },
 				yaml = { "prettier" },
 				sql = { "pg_format" },
 			},

@@ -7,7 +7,7 @@ set --le-predict
 
 alias duh='du -hs * | sort -h'
 alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
-alias mci='make clean install'
+alias mci='doas make clean install'
 alias scc='scc --no-cocomo -c'
 alias cdf='cd $(fd -td . | fzy)'
 alias gp='git push'
@@ -74,7 +74,7 @@ HISTSIZE=5000
 
 MAILCHECK=0
 
-YASH_PS1='$? $LOGNAME@$HOSTNAME $PWD${{SHLVL-0}:/1} $ '
+YASH_PS1='$? $LOGNAME@$HOSTNAME $PWD $ '
 YASH_PS1R='\fc.'
 YASH_PS1S='\fo.'
 YASH_PS2='> '

@@ -1,1 +1,7 @@
 vim.keymap.set("i", "jk", "<esc>")
+vim.keymap.set("n", "<leader>mr", ":!make run<cr>")
+vim.keymap.set("n", "<leader>mb", ":!make build<cr>")
+vim.keymap.set("n", "<leader>mt", ":!make test<cr>")
+vim.keymap.set("n", "<leader>ml", ":!make lint<cr>")
+vim.keymap.set("n", "<leader>mc", ":!make clean<cr>")
+vim.keymap.set("n", "<leader>gr", ":!go run %<cr>")
