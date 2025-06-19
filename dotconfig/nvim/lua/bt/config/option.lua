@@ -1,11 +1,15 @@
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.backspace = { "indent", "eol", "start" }
+vim.opt.path:append("**")
+-- vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
 vim.opt.completeopt:remove("preview")
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.expandtab = false
 vim.o.tabstop = 8
 vim.o.shiftwidth = 8
+vim.o.smartindent = false
+vim.o.autoindent = true
 vim.o.writebackup = false
 vim.o.swapfile = false
 vim.o.history = 1024
@@ -19,8 +23,9 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.o.inccommand = "split"
 vim.o.cursorline = false
-vim.o.colorcolumn = "120"
+vim.o.colorcolumn = "100"
 vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
 vim.o.wrap = false
 vim.o.undofile = true
 vim.o.undodir = "/home/basuev/.nvim/undo"
@@ -28,3 +33,11 @@ vim.o.termguicolors = false
 vim.o.showmode = false
 vim.o.cursorlineopt = "number"
 vim.o.cursorline = true
+vim.o.hlsearch = false
+vim.o.matchtime = 2
+vim.o.timeoutlen = 500
+vim.o.ttimeoutlen = 0
+vim.o.autoread = true
+vim.o.autowrite = false
+vim.o.foldmethod = "expr"
+vim.o.foldlevel = 99
