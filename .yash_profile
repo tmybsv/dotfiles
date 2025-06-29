@@ -8,7 +8,3 @@ export HOSTNAME=$(uname -n)
 export PATH=$PATH:/bin:~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:~/.go/bin:~/.npm-global/bin:~/.cargo/bin:/opt/cuda/bin
 export BROWSER=firefox
 export GOPATH=$HOME/.go
-cd /home/basuev/src/typings/ && git pull &
-cd /home/basuev/src/dotfiles/ && git pull &
-cd /home/basuev/src/kdbx/ && git pull &
-cd /home/basuev/src/mind-obsidian/ && git pull &
