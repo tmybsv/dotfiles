@@ -1,5 +1,5 @@
 return {
-	"mishkafreddy2009/fzyf.nvim",
+	"tmybsv/fzyf.nvim",
 	config = function()
 		local fzyf = require("fzyf")
 		fzyf.setup({
