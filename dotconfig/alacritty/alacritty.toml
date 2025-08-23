@@ -1,0 +1,30 @@
+[font]
+normal = { family = "Cascadia Mono" }
+size = 10.5
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0x555555"
+blue = "0x5555ff"
+cyan = "0x55ffff"
+green = "0x55ff55"
+magenta = "0xff55ff"
+red = "0xff5555"
+white = "0xffffff"
+yellow = "0xffff55"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x0000aa"
+cyan = "0x00aaaa"
+green = "0x00aa00"
+magenta = "0xaa00aa"
+red = "0xaa0000"
+white = "0xaaaaaa"
+yellow = "0xaa5500"
+
+[colors.primary]
+background = "0x0c0c0c"
+foreground = "0xcccccc"
