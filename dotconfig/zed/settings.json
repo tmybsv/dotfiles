@@ -1,0 +1,42 @@
+{
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-thinking"
+    },
+    "default_profile": "write"
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Dark Soft",
+    "dark": "One Dark"
+  },
+  "ui_font_family": "Noto Sans",
+  "buffer_font_family": "Cascadia Mono",
+  "relative_line_numbers": true,
+  "format_on_save": "on",
+  "gutter": {
+    "line_numbers": true
+  },
+  "current_line_highlight": "gutter",
+  "vertical_scroll_margin": 8,
+  "soft_wrap": "none",
+  "preferred_line_length": 100,
+  "show_wrap_guides": true,
+  "wrap_guides": [100],
+  "show_whitespaces": "trailing",
+  "lsp": {
+    "gopls": {
+      "settings": {
+        "telemetry": { "enable": false }
+      }
+    }
+  }
+}
