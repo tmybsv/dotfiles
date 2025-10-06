@@ -1,5 +1,3 @@
-vim.opt.clipboard = "unnamedplus"
-vim.opt.backspace = { "indent", "eol", "start" }
 vim.opt.path:append("**")
 vim.opt.completeopt:remove("preview")
 vim.o.number = true
@@ -28,7 +26,7 @@ vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 vim.o.wrap = false
 vim.o.undofile = true
-vim.o.undodir = "/home/basuev/.nvim/undo"
+vim.o.undodir = os.getenv("HOME")+".nvim/undo"
 vim.o.termguicolors = true
 vim.o.background = "dark"
 vim.cmd.colorscheme("unokai")
